@@ -10,25 +10,35 @@ package projeto;
  */
 public class Node {
     
-    	private Livro livroSalvo;
+    	private LivrosAutor livroSalvo;
 	private Node proximoNode;
+
+    public Node(LivrosAutor livroSalvo, Node proximoNode) {
+        this.livroSalvo = livroSalvo;
+        this.proximoNode = proximoNode;
+    }
+
+    Node(LivrosAutor novoLivro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public LivrosAutor getLivroSalvo() {
+        return livroSalvo;
+    }
+
+    public void setLivroSalvo(LivrosAutor livroSalvo) {
+        this.livroSalvo = livroSalvo;
+    }
+
+    public Node getProximoNode() {
+        return proximoNode;
+    }
+
+    public void setProximoNode(Node proximoNode) {
+        this.proximoNode = proximoNode;
+    }
 	
-	public Node(Consulta novaConsulta) {
-		this.consultaMarcada = novaConsulta;
-	}
-	
-	public Consulta getConsultaMarcada() {
-		return consultaMarcada;
-	}
-	public void setConsultaMarcada(Consulta consultaMarcada) {
-		this.consultaMarcada = consultaMarcada;
-	}
-	public Node getProximoNode() {
-		return proximoNode;
-	}
-	public void setProximoNode(Node proximoNode) {
-		this.proximoNode = proximoNode;
-	}
+        
 	
     
 }

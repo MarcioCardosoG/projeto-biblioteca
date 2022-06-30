@@ -53,8 +53,8 @@ public class ListaDeLivros {
 
 
 
-	public void adicionar(Consulta novaConsulta) {
-		Node novoNode = new Node(novaConsulta);
+	public void adicionar(LivrosAutor novoLivro) {
+		Node novoNode = new Node(novoLivro);
 		if(this.primeiro == null && this.ultimo == null ) {
 			this.primeiro = novoNode;
 			this.ultimo = novoNode;
@@ -66,6 +66,8 @@ public class ListaDeLivros {
 		this.tamanhoLista++;
 	}
 	
+
+    @SuppressWarnings("empty-statement")
 	public Node Get(int posicao) {
 		Node atual = this.primeiro;
 		for(int i=0; i<posicao; i++ );
