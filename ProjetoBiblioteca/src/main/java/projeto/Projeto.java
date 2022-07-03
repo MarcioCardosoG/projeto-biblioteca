@@ -15,7 +15,7 @@ public class Projeto {
         
 
 
-
+        Conexao con = new Conexao();
 
         Scanner sc = new Scanner(System.in);
 
@@ -26,7 +26,7 @@ public class Projeto {
         while (opcaoMenu != 0) {
 
             System.out.println("=======================================================");
-            System.out.println("1 - Realizar consulta sobre o catálogo de livros");
+            System.out.println("1 - Realizar consulta sobre o catálogo de livros em ordem alfabética");
             System.out.println("0 - Finalizar programa");
             System.out.println("=======================================================");
 
@@ -35,7 +35,7 @@ public class Projeto {
             switch (opcaoMenu) {
 
                 case 1 -> {
-                   Conexao con = new Conexao();
+                   
                    con.consultaLivro();
                     
                     
