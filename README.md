@@ -1,3 +1,4 @@
 # projeto-biblioteca
 
-Projeto da faculdade em grupo, sera elaborado um DB com Postgres.
+Projeto da faculdade em grupo, sera elaborado um DB com Postgres, e o programa deverá fazer uma consulta nesse banco, retornando os titulos.
+Escolhemos retornar os titulos em ordem alfabética.
